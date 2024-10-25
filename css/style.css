@@ -1,3 +1,35 @@
 html > body {
     height: 100%;
 }
+
+.center-page
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.center-content
+{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+.google-font
+{
+
+}
+
+/*
+media query - for screen sizes <= 320 
+*/
