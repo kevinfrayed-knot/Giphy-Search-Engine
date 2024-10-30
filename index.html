@@ -6,11 +6,15 @@
     <title>Kevin's Superstellar Uberawesome Giphy Search Engine version 1.0.0</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">    
     <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body onload="page_load()">
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="#">About</a>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="#about">About</a></li>
+            <li><a href="#contact_form">Contact</a></li>
+        </ul>
     </nav>
     <main class="center-page">
         <header>
@@ -29,7 +33,31 @@
             <div id="output" class="output"></div>
             <p></p>
         </section>
+        <section id="#about">
+            <div>
+                <h3>Thanks for visting our page!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia cum dolores ipsam repudiandae illo, praesentium nobis ea labore eius quae, quidem sequi. Iure voluptas vero officia amet pariatur velit.</p>
+            </div>
+        </section>
         <p></p>
+        <section id="contact_form" class="contact-form">
+            <div>
+                <fieldset>
+                    <form id="get-in-touch" action="https://formspree.io/f/mpwzzpnl" method="POST">
+                        <label>* First Name: </label>
+                        <input type="text" name="name" placeholder="* First Name required" minlength="5" maxlength="10" required>
+                        <br/>
+                        <label>* Email: </label>
+                        <input type="email" name="email" placeholder="* Email" required>
+                        <br/>
+                        <label>Your Message: </label>
+                        <textarea name="message" placeholder="Message" cols="30" rows="5"></textarea>
+                        <p></p>
+                        <button type="submit">Submit</button>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
         <footer>
             <div>&copy;2024 Kevin's Superstellar Uberawesome Giphy Search Engine</div>
         </di>

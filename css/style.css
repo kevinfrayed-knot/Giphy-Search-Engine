@@ -1,5 +1,34 @@
+* {
+    border: 1px solid red;
+}
+
+nav {
+    border: 5 px solid blue;
+}
+
+ul {
+    border: 2 px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+
+}
+
 html > body {
+    box-sizing: border-box;
     height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 .center-page
@@ -23,13 +52,10 @@ html > body {
 
 h1 {
     text-align: center;
-    font-size: 4.5;
+    font-size: 5em;
 }
 
-.google-font
-{
 
-}
 
 /*
 media query - for screen sizes <= 320 
