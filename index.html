@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin's Superstellar Uberawesome Giphy Search Engine version 1.0.0</title>
-    <link type="text/css" rel="stylesheet" href="css/style.css">    
-    <script src="js/main.js" defer></script>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://kit.fontawesome.com/14d0d61748.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body onload="page_load()">
-    <nav>
-        <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="#about">About</a></li>
-            <li><a href="#contact_form">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <a class="hamburger" href="#navbar" aria-label="open main menu">
+        <span class="sr-only">Open main menu</span>
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </a>
+            <nav id="navbar">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                    <li><a href="#contact_form">Contact</a></li>
+                </ul>
+                <a class="close" href="#" aria-label="Close main menu">
+                    <span class="sr-only">Close main menu</span>
+                    <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                    </a>
+            
+            </nav>
+    </header>
     <main class="center-page">
-        <header>
+        <header class="hero">
                 <h1>
                     Kevin's Superstellar Uberawesome Giphy Search Engine
                 </h1>
@@ -33,7 +45,7 @@
             <div id="output" class="output"></div>
             <p></p>
         </section>
-        <section id="#about">
+        <section id="#about" class="about-section">
             <div>
                 <h3>Thanks for visting our page!</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia cum dolores ipsam repudiandae illo, praesentium nobis ea labore eius quae, quidem sequi. Iure voluptas vero officia amet pariatur velit.</p>
@@ -44,13 +56,13 @@
             <div>
                 <fieldset>
                     <form id="get-in-touch" action="https://formspree.io/f/mpwzzpnl" method="POST">
-                        <label>* First Name: </label>
+                        <label>Name: </label><br>
                         <input type="text" name="name" placeholder="* First Name required" minlength="5" maxlength="10" required>
                         <br/>
-                        <label>* Email: </label>
+                        <label>Email: </label><br>
                         <input type="email" name="email" placeholder="* Email" required>
                         <br/>
-                        <label>Your Message: </label>
+                        <label>Message: </label><br>
                         <textarea name="message" placeholder="Message" cols="30" rows="5"></textarea>
                         <p></p>
                         <button type="submit">Submit</button>

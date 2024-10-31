@@ -1,4 +1,4 @@
-* {
+/** {
     border: 1px solid red;
 }
 
@@ -8,19 +8,71 @@ nav {
 
 ul {
     border: 2 px solid black;
+}*/
+
+/* begin navigation styles */
+.hamburger, .close {
+    font-size: 2rem;
+    color: fuchsia;
+}
+nav {
+    /*border: 1px solid #333;
+    margin: 1rem auto;*/
+    background-color: #eee;
+    padding: 1rem;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    /*animate navbar toggle to slide navbar down*/
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+}
+
+nav:target {
+    transform: translateY(0);
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav li {
+    padding: 0.5rem 1rem;
+}
+nav li:hover {
+    background-color: #08d1f0;
 }
 
 nav a {
-
+    display: block;
+    color: fuchsia;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
+nav a:focus {
+    background-color: blue;
+}
+nav a:hover {
+    color: darkred;
+}
+/* End of Navigation Styles */
 
-html > body {
+
+html {
     box-sizing: border-box;
     height: 100%;
 }
@@ -29,6 +81,19 @@ html > body {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+body {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 40px;
+    font-size: 1.2rem;
+}
+
+.about-section {
+    margin: 5%;
+    padding: 20px 20px;
 }
 
 .center-page
@@ -50,12 +115,52 @@ html > body {
     word-wrap: break-word;
 }
 
-h1 {
-    text-align: center;
-    font-size: 5em;
+.hero {
+    background-image:url('../assets/images/image1.png');
+    background-position: center;
+    width: 100vw;
+    height: 75vh;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.hero > h1 {
+    font-size: 4.5rem;
+    color: white;
+    text-shadow: 5px 5px #558ABB;
+    text-align: center;
+    
+}
 
+section.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 5px;
+    border-color: #02060b;
+}
+form {
+    display: block;
+    width: 650px;
+}
+#get-in-touch > input[type=text]:nth-child(3) {
+    width: 100%;
+}
+#get-in-touch > input[type=email]:nth-child(7) {
+    width: 100%;
+}
+#get-in-touch > textarea {
+    width: 100%;
+}
+#get-in-touch > button {
+    width: 100%;
+    background-color: rgb(69, 114, 23);
+    color: white;
+    font: inherit;
+}
 
 /*
 media query - for screen sizes <= 320 
