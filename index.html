@@ -19,7 +19,7 @@
                 <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
-                    <li><a href="#contact_form">Contact</a></li>
+                <li><a href="#contact_form">Contact</a></li>
                 </ul>
                 <a class="close" href="#" aria-label="Close main menu">
                     <span class="sr-only">Close main menu</span>
@@ -34,10 +34,10 @@
                     Kevin's Superstellar Uberawesome Giphy Search Engine
                 </h1>
         </header>
-        <div>
-            <input type="text" id="txtsearch" class="txtsearch" maxlength="25" placeholder="enter search text">
-            <button id="btn-search" class="btn-search">search</button>
-            <a href="#" id="btn-reset" class="btn-reset">reset</a>
+        <div id="gif-search" class="gif_search">
+            <input type="text" id="txtsearch" class="txtsearch" maxlength="25" placeholder="enter search text"><br>
+            <button id="btn-search" class="btn-search">search</button><br>
+            <button><a href="#" id="btn-reset" class="btn-reset">reset</a></button>
         </div>        
         <p></p>
         <section>
@@ -45,10 +45,13 @@
             <div id="output" class="output"></div>
             <p></p>
         </section>
-        <section id="#about" class="about-section">
-            <div>
+        <section >
+            <div id="#about" class="about-section">
+                <img class="about_image" id="about-image" src="/assets/images/IMG2.PNG">
                 <h3>Thanks for visting our page!</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia cum dolores ipsam repudiandae illo, praesentium nobis ea labore eius quae, quidem sequi. Iure voluptas vero officia amet pariatur velit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit pariatur reiciendis, corrupti non animi, nesciunt doloremque libero dignissimos nihil est quia totam dolor, fuga aspernatur sapiente quae deserunt dolore quod.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ea, nihil, commodi possimus id dolore repudiandae quis, fugit a soluta officiis cumque quia incidunt eveniet hic quibusdam fugiat nulla esse!</p>
             </div>
         </section>
         <p></p>
@@ -57,10 +60,10 @@
                 <fieldset>
                     <form id="get-in-touch" action="https://formspree.io/f/mpwzzpnl" method="POST">
                         <label>Name: </label><br>
-                        <input type="text" name="name" placeholder="* First Name required" minlength="5" maxlength="10" required>
+                        <input type="text" name="name" placeholder="*Name required" minlength="5" maxlength="10" required>
                         <br/>
                         <label>Email: </label><br>
-                        <input type="email" name="email" placeholder="* Email" required>
+                        <input type="email" name="email" placeholder="*Email required" required>
                         <br/>
                         <label>Message: </label><br>
                         <textarea name="message" placeholder="Message" cols="30" rows="5"></textarea>
