@@ -228,6 +228,11 @@ form {
     width: 100%;
 }
 
+.output {
+    display: grid;
+    grid-template-rows: subgrid;
+}
+
 
 /*
 media query - for screen sizes <= 320 
