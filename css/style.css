@@ -328,11 +328,11 @@ body {
 }
 
 .hero > h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: white;
     text-shadow: 5px 5px #558ABB;
     text-align: center;
-    
+    padding: 1rem;
 }
 
 section.contact-form {
